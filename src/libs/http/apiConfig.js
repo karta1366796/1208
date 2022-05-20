@@ -55,7 +55,7 @@ export default class Connect{
   
     #call(config) {
       const instance = axios.create({
-        timeout: 10000,
+        // timeout: 100,
         withCredentials : this.withCredentials
       });
       instance.interceptors.request.use((config) => {
